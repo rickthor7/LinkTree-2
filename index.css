@@ -1,0 +1,121 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Fredoka One', cursive;
+}
+
+#wrapper {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    z-index: 2;
+    overflow: hidden;
+    padding: 0 1.5em;
+}
+
+#link_container {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 32em;
+    background-image: linear-gradient(rgb(5, 5, 5), rgb(22, 22, 22));
+    box-shadow: 1em 4em 5em 1em rgb(0 0 0 / 22%);
+    z-index: 2;
+}
+
+
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    min-height: 20em;
+    margin-bottom: 1em;
+    background-color: aquamarine;
+    background-image: url(./img/IMG_0247.jpg);
+    background-size: cover;
+}
+
+.title {
+    font-size: 3em;
+    color: white;
+    margin-bottom: .5em;
+    text-align: center;
+    text-shadow: 6px 6px #000;
+}
+
+#bgVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -3;
+  }
+
+#menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: .5em;
+    width: 100%;
+}
+
+.button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #F6B6FA;
+    border: #F6B6FA solid 2px;
+    border-radius: 35px;
+    padding: .8em 1em;
+    margin: .7em .6em;
+    width: 36%;
+    height: 1.5em;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    -webkit-filter: hue-rotate(320deg);
+    filter: hue-rotate(320deg);
+
+}
+
+.icon {
+    margin-left: .75em;
+    width: 1.3em;
+    height: 1.3em;
+}
+
+.button:hover {
+    -webkit-filter: hue-rotate(120deg);
+    filter: hue-rotate(120deg);
+    transform: scale(.9);
+}
+
+@media screen and (max-width: 600px) {
+    #menu {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .button {
+        width: 80%;
+        height: 2em;
+        margin: 1em .6em;
+    }
+}
