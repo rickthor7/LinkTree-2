@@ -50,10 +50,25 @@ header {
 .title {
     font-size: 3em;
     color: white;
-    margin-bottom: .5em;
     text-align: center;
-    text-shadow: 6px 6px #000;
+    width: 100%;
+    background-color: rgba(0,0,0,.8);
 }
+
+
+
+.contact {
+    font-size: 1.3em;
+    padding: 3px 0 12px 0;
+    color: white;
+    margin-bottom: .5em; 
+    letter-spacing: .1em;
+    text-align: center;
+    width: 100%;
+    background-color: rgba(0,0,0,.8);
+    text-decoration: none;
+}
+
 
 #bgVideo {
     position: fixed;
